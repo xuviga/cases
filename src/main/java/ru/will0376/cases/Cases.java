@@ -33,6 +33,7 @@ public class Cases {
 	public static final String VERSION = "2.0";
 	@GradleSideOnly(GradleSide.CLIENT)
 	public static KeyBinding KeyTest;
+
 	public static SimpleNetworkWrapper network;
 
 	@Mod.EventHandler
@@ -49,7 +50,7 @@ public class Cases {
 		});
 
 	}
-	@GradleSideOnly(GradleSide.SERVER)
+
 	@Mod.EventHandler
 	public void init(FMLInitializationEvent event) {
 
