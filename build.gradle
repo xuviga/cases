@@ -4,14 +4,18 @@ buildscript {
         maven {
             name = "forge"
             url = "https://maven.minecraftforge.net/"
-        }       
-		maven {
+        }
+        maven {
             name = "github"
             url = "https://github.com/juanmuscaria/maven/raw/master"
         }
+        maven { url = 'http://files.minecraftforge.net/maven' }
+        maven { url = 'https://plugins.gradle.org/m2/' }
+        maven { url = 'https://oss.sonatype.org/content/repositories/snapshots/' }
     }
     dependencies {
         classpath 'net.minecraftforge.gradle:ForgeGradle2:[2.3-1.0.0-SNAPSHOT,)'
+        classpath 'tech.justagod:cutter:2.1.0-SNAPSHOT'
     }
 }
 
@@ -24,6 +28,7 @@ repositories {
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 apply plugin: 'net.minecraftforge.gradle.forge'
+apply plugin: 'cutter'
 
 version = mod_version
 group = mod_group
@@ -59,9 +64,9 @@ processResources {
         exclude 'mcmod.info'
     }
 }
-
+cutter.initializeDefault(true,false)
 dependencies {
-	compile name: 'Baubles-1.12-1.5.2-dev'
+	//compile name: 'Baubles-1.12-1.5.2-dev'
 }
 
 task devJar(type: Jar) {
