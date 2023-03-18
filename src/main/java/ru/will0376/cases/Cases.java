@@ -9,6 +9,7 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
 import net.minecraftforge.fml.common.network.simpleimpl.SimpleNetworkWrapper;
 import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 import org.lwjgl.input.Keyboard;
 import ru.justagod.cutter.GradleSide;
 import ru.justagod.cutter.GradleSideOnly;
@@ -31,6 +32,7 @@ public class Cases {
 	public static final String MOD_ID = "cases";
 	public static final String MOD_NAME = "Cases";
 	public static final String VERSION = "2.0";
+	@SideOnly(Side.CLIENT)
 	public static KeyBinding KeyTest;
 	public static SimpleNetworkWrapper network;
 	@Mod.Instance(MOD_ID)
@@ -64,7 +66,7 @@ public class Cases {
 		}
 	}
 
-	@GradleSideOnly(GradleSide.SERVER)
+	@SideOnly(Side.SERVER)
 	@Mod.EventHandler
 	public void initServer(FMLServerStartingEvent event) {
 		event.registerServerCommand(new Comma());
