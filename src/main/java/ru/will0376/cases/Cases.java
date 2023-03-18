@@ -49,12 +49,12 @@ public class Cases {
 		});
 
 	}
-
+	@GradleSideOnly(GradleSide.SERVER)
 	@Mod.EventHandler
 	public void init(FMLInitializationEvent event) {
 
 	}
-
+	@GradleSideOnly(GradleSide.CLIENT)
 	@Mod.EventHandler
 	public void postinit(FMLPostInitializationEvent event) {
 		if(event.getSide().isClient()){
