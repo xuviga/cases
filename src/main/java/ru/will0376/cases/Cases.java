@@ -31,10 +31,9 @@ public class Cases {
 	public static final String MOD_ID = "cases";
 	public static final String MOD_NAME = "Cases";
 	public static final String VERSION = "2.0";
+	@GradleSideOnly(GradleSide.CLIENT)
 	public static KeyBinding KeyTest;
 	public static SimpleNetworkWrapper network;
-	@Mod.Instance(MOD_ID)
-	public static Cases INSTANCE;
 
 	@Mod.EventHandler
 	public void preinit(FMLPreInitializationEvent event) {
