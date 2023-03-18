@@ -4,9 +4,9 @@ WARNING: coremods are present:
   EventHelperCoreMod (EventHelper-1.12.2-2.6.2 (1).jar)
 Contact their authors BEFORE contacting forge
 
-// Sorry :(
+// You're mean.
 
-Time: 3/18/23 11:04 PM
+Time: 3/18/23 11:09 PM
 Description: Exception in server tick loop
 
 java.lang.NoClassDefFoundError: Lnet/minecraft/client/settings/KeyBinding;
@@ -52,7 +52,7 @@ Caused by: java.lang.ClassNotFoundException: net.minecraft.client.settings.KeyBi
 	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
 	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
 	... 37 more
-Caused by: net.minecraftforge.fml.common.asm.ASMTransformerWrapper$TransformerException: Exception in class transformer net.minecraftforge.fml.common.asm.transformers.SideTransformer@4a2823f1 from coremod FMLCorePlugin
+Caused by: net.minecraftforge.fml.common.asm.ASMTransformerWrapper$TransformerException: Exception in class transformer net.minecraftforge.fml.common.asm.transformers.SideTransformer@37d841a8 from coremod FMLCorePlugin
 	at net.minecraftforge.fml.common.asm.ASMTransformerWrapper$TransformerWrapper.transform(ASMTransformerWrapper.java:262)
 	at net.minecraft.launchwrapper.LaunchClassLoader.runTransformers(LaunchClassLoader.java:277)
 	at net.minecraft.launchwrapper.LaunchClassLoader.findClass(LaunchClassLoader.java:174)
@@ -72,7 +72,7 @@ Details:
 	Operating System: Linux (amd64) version 5.4.0-144-generic
 	Java Version: 1.8.0_362, Private Build
 	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Private Build
-	Memory: 33058797832 bytes (31527 MB) / 34359738368 bytes (32768 MB) up to 34359738368 bytes (32768 MB)
+	Memory: 33044236784 bytes (31513 MB) / 34359738368 bytes (32768 MB) up to 34359738368 bytes (32768 MB)
 	JVM Flags: 9 total; -Xmx32G -Xms32G -XX:ActiveProcessorCount=12 -XX:+UseG1GC -XX:+UnlockExperimentalVMOptions -XX:G1NewSizePercent=20 -XX:G1ReservePercent=20 -XX:MaxGCPauseMillis=50 -XX:G1HeapRegionSize=32M
 	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
 	CraftBukkit Information: 
