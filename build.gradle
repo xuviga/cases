@@ -59,10 +59,6 @@ processResources {
 		'mod_version': mod_version,
 		'mod_icon': mod_icon
     }
-
-    from(sourceSets.main.resources.srcDirs) {
-        exclude 'mcmod.info'
-    }
 }
 cutter.initializeDefault(true,false)
 dependencies {
